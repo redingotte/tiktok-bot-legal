@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Authorization</title>
+  <style>
+    body {
+      font-family: monospace;
+      background: #0a0a0a;
+      color: #50ffa0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    code {
+      background: #111;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      word-break: break-all;
+      max-width: 800px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>✅ Authorization successful</h2>
+  <p>Copy the <strong>code</strong> value below and paste it in your terminal:</p>
+  <code id="code"></code>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    if (code) {
+      document.getElementById('code').textContent = 'code=' + code;
+    } else {
+      document.getElementById('code').textContent = 'No code received. ' + window.location.search;
+    }
+  </script>
+</body>
+
+</html>
