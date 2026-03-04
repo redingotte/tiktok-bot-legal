@@ -1,44 +1,47 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>compte2 — Site officiel</title>
+  <title>compte2 — Official Website</title>
 </head>
 <body style="font-family: Arial, sans-serif; max-width: 820px; margin: 40px auto; padding: 0 16px; line-height: 1.5;">
   <h1>compte2</h1>
-  <p><strong>Site officiel</strong> de l’application “compte2” (intégration TikTok Login Kit + Content Posting API).</p>
+  <p><strong>Official website</strong> for the “compte2” application (TikTok Login Kit + Content Posting API integration).</p>
 
-  <h2>À quoi sert l’app</h2>
+  <h2>What the app does</h2>
   <p>
-    compte2 permet à son propriétaire d’autoriser un compte TikTok via Login Kit, puis de publier des vidéos
-    sur ce même compte via l’API de publication (Content Posting API).
+    compte2 allows its owner to authorize a TikTok account using Login Kit and then publish videos to that same
+    authorized account using the Content Posting API.
+  </p>
+  <p>
+    This app is used exclusively by its owner to manage their own TikTok accounts. No third-party users authenticate through this app.
   </p>
 
-  <h2>Comment ça fonctionne</h2>
+  <h2>How it works</h2>
   <ol>
-    <li>Connexion et autorisation via TikTok Login Kit (scope: user.info.basic).</li>
-    <li>Upload de vidéo via Content Posting API (scopes: video.upload / video.publish selon le mode).</li>
-    <li>Publication sur le profil du compte autorisé.</li>
+    <li>Login and authorization via TikTok Login Kit (scope: <code>user.info.basic</code>).</li>
+    <li>Video upload via TikTok Content Posting API (scopes: <code>video.upload</code> / <code>video.publish</code> depending on posting mode).</li>
+    <li>Publishing the video to the authorized account’s TikTok profile.</li>
   </ol>
 
   <h2>Support / Contact</h2>
-  <p>Email : <a href="mailto:compte1.meta@google.com">compte1.meta@google.com</a></p>
+  <p>Email: <a href="mailto:compte1.meta@google.com">compte1.meta@google.com</a></p>
 
-  <h2>Suppression des données (Data Deletion)</h2>
+  <h2>Data Deletion</h2>
   <p>
-    Pour demander la suppression des données liées à votre autorisation (tokens / identifiants techniques),
-    envoyez un email à l’adresse ci-dessus avec votre TikTok username et l’objet “Data Deletion Request”.
+    To request deletion of data related to your authorization (e.g., tokens and technical identifiers used to operate the integration),
+    email the address above with your TikTok username and the subject line “Data Deletion Request”.
   </p>
 
-  <h2>Documents légaux</h2>
+  <h2>Legal</h2>
   <ul>
     <li><a href="./privacy-policy.html">Privacy Policy</a></li>
     <li><a href="./terms-of-service.html">Terms of Service</a></li>
   </ul>
 
   <p style="margin-top: 28px; font-size: 12px; opacity: 0.8;">
-    Non affilié à TikTok.
+    Not affiliated with TikTok.
   </p>
 </body>
 </html>
